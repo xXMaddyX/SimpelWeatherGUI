@@ -95,7 +95,7 @@ class Main:
 
     def get_data(self):
         lang = "de"
-        api_key = "546fc8e5dd93bceaedc42572eee7749a"
+        api_key = "YOUR API KEY"
         url = f"http://api.openweathermap.org/data/2.5/weather?q={self.citydata},de&APPID={api_key}&lang={lang}"
         response = requests.get(url)
         data = json.loads(response.text)
