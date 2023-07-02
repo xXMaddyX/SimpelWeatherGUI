@@ -132,7 +132,7 @@ class Main:
                 self.output = f"SW, {self.wind_direction}°"
             elif self.wind_direction == 270:
                 self.output = f"W, {self.wind_direction}°"
-            elif self.wind_direction >= 270 and self.wind_direction <= 0:
+            elif self.wind_direction >= 270 and self.wind_direction <= 359:
                 self.output = f"NW, {self.wind_direction}°"
             else:
                 self.output = "No Data"
